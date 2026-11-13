@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:customUI xmlns:ns0="http://schemas.microsoft.com/office/2006/01/customui">
+  <ns0:ribbon>
+    <ns0:tabs>
+      <ns0:tab id="JackPictureToolsTab" label="图片工具" insertAfterMso="TabHome">
+        <ns0:group id="JackPictureFloatGroup" label="图片转换">
+          <ns0:button id="JackFloatAllPictures" label="选中嵌入图片单元格" size="large" imageMso="PictureInsertFromFile" onAction="ConvertAllPictures" screentip="选中嵌入图片单元格" supertip="仅选中当前工作表的嵌入图片单元格，由你右键切换为浮动图片。不转换、不保存。" />
+          <ns0:button id="JackEmbedAllPictures" label="选中可嵌入的浮动图片" size="large" imageMso="PictureInsertFromFile" onAction="EmbedAllPictures" screentip="选中可嵌入的浮动图片" supertip="仅选中当前工作表目标为空的浮动图片；跳过有内容或目标重叠的图片，由你右键嵌入。不转换、不保存。" />
+        </ns0:group>
+        <ns0:group id="JackAmountWordsGroup" label="金额大写">
+          <ns0:button id="JackAmountUSD" label="美元大写" size="large" imageMso="AccountingFormat" onAction="AmountUSD" screentip="数字金额转美元英文大写" supertip="先选中一个数字金额，点击后复制大写结果，再自行 Ctrl+V 粘贴到需要的位置。不改动单元格、不自动保存。" />
+          <ns0:button id="JackAmountRMB" label="人民币大写" size="large" imageMso="AccountingFormat" onAction="AmountRMB" screentip="数字金额转人民币中文大写" supertip="先选中一个数字金额，点击后复制大写结果，再自行 Ctrl+V 粘贴到需要的位置。不改动单元格、不自动保存。" />
+          <ns0:button id="JackAmountRMBEnglish" label="人民币英文大写" size="large" imageMso="AccountingFormat" onAction="AmountRMBEnglish" screentip="数字金额转 SAY CNY 英文大写" supertip="选中数字金额，点击复制 SAY CNY 开头的英文大写；有小数时使用 CENT/CENTS，再自行 Ctrl+V 粘贴。" />
+        </ns0:group>
+      </ns0:tab>
+    </ns0:tabs>
+  </ns0:ribbon>
+</ns0:customUI>
